@@ -1,102 +1,102 @@
-#customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+  nav {
+    position: fixed;
     width: 100%;
   }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  body {
-      font-family: sans-serif;
-  }
-  body {
 
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    margin-top:20px;
-     margin-left: 100px;
-     margin-top: 50px;
-     opacity: 0.8;
-    filter: alpha(opacity=80);
-  
-  }
-  .post{
-   width: 108.5%;
-    margin-left: -15px;
-   margin-top: -15px;
-   margin-bottom: -20px;
-    
-  }
-  .column {
-    float: left;
-    width: 33%;
-    padding: 0 10px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ffffff;
   }
   
   li {
     float: right;
   }
+
+  nav ul li {
+    padding: 5px;
+    font-weight: 600;
+  }
+
+  nav ul li:hover {
+    border-bottom: 2px solid #ffcd03;
+    border-top: 2px solid rgb(255, 205, 3);
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: rgb(255, 205, 3);
+  }
+
+  nav ul li:hover a {
+    color: white !important;
+  }
+  
   #header{
       float: left;
   }
+
   li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: #03469e !important;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
   }
-  footer{
-    text-align: center;
-    padding: 3px;
-    background-color: grey;
-    color: black;
+
+  .active {
+    /* border: 2px solid #ffff00; */
+    border-bottom: 2px solid rgb(255, 205, 3);
+    border-bottom-right-radius: 50%;
   }
 
   
-  
-  
+  .image-under-nav {
+    background-image: url('../assets/gorilla.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
+
+  .image-under-nav h1 {
+    position: absolute;
+    color: #ffff00;
+    background-color: #cacaca79;
+    padding: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 35%;
+    bottom: 0;
+  }
+  /* # */
+
+.main-footer {
+  background-color: #035b99;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+}
+
+.footer{
+  /* color: black; */
+  background-color:#035b99;
+  margin-left: -8px;
+  /* padding: 8px; */
+  display: block;
+  width: 100%;
+}
+
+.contact-us, .investment, .links, .media {
+  width: 24%;
+  float: left;
+  background-color: #035b99;
+  color: #fff;
+}
+
