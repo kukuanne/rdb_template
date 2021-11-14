@@ -1,159 +1,102 @@
-#customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+  nav {
+    position: fixed;
     width: 100%;
   }
-  
-  #customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #customers tr:hover {background-color: #ddd;}
-  
-  #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-  }
-  
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ffffff;
   }
   
   li {
     float: right;
   }
-  
-  body {
-      margin: 0;
-      padding: 0;
-      background: url();
-      background-size: cover;
-      font-family: sans-serif;
+
+  nav ul li {
+    padding: 5px;
+    font-weight: 600;
+  }
+
+  nav ul li:hover {
+    border-bottom: 2px solid #ffcd03;
+    border-top: 2px solid rgb(255, 205, 3);
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: rgb(255, 205, 3);
+  }
+
+  nav ul li:hover a {
+    color: white !important;
   }
   
-  body {
-      display: block;
-      margin: 8px;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    margin-top:20px;
-     margin-left: 100px;
-     margin-top: 50px;
-     opacity: 0.8;
-    filter: alpha(opacity=80);
-  
-  }
-  .post{
-   width: 108.5%;
-    margin-left: -15px;
-   margin-top: -15px;
-   margin-bottom: -20px;
-    
-  }
-  .column {
-    float: left;
-    width: 33%;
-    padding: 0 10px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: right;
-  }
   #header{
       float: left;
   }
+
   li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: #03469e !important;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
   }
+
+  .active {
+    /* border: 2px solid #ffff00; */
+    border-bottom: 2px solid rgb(255, 205, 3);
+    border-bottom-right-radius: 50%;
+  }
+
   
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+  .image-under-nav {
+    background-image: url('../assets/gorilla.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
   }
-  input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+
+  .image-under-nav h1 {
+    position: absolute;
+    color: #ffff00;
+    background-color: #cacaca79;
+    padding: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 35%;
+    bottom: 0;
   }
-  
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
+  /* # */
+
+.main-footer {
+  background-color: #035b99;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+}
+
+.footer{
+  /* color: black; */
+  background-color:#035b99;
+  margin-left: -8px;
+  /* padding: 8px; */
+  display: block;
+  width: 100%;
+}
+
+.contact-us, .investment, .links, .media {
+  width: 24%;
+  float: left;
+  background-color: #035b99;
+  color: #fff;
+}
+
