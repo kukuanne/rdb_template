@@ -17,8 +17,9 @@ body {
   }
   
   li {
-    float: right;
+    float: left;
   }
+  
 
   nav ul li {
     padding: 5px;
@@ -37,9 +38,8 @@ body {
     color: white !important;
   }
   
-  #header{
-      float: left;
-  }
+
+
 
   li a, .dropbtn {
     display: inline-block;
@@ -55,8 +55,6 @@ body {
     border-bottom: 2px solid rgb(255, 205, 3);
     border-bottom-right-radius: 50%;
   }
-
-  
   .image-under-nav {
     background-image: url('../assets/gorilla.png');
     height: 100vh;
@@ -64,7 +62,6 @@ body {
     background-size: cover;
     /* background-attachment: fixed; */
   }
-
   .image-under-nav h1 {
     position: absolute;
     color: #ffff00;
@@ -75,7 +72,19 @@ body {
     margin-left: 35%;
     bottom: 0;
   }
-  /* # */
+  .paragraphs{
+    background-color: #ffff00;
+    display: inline-block;
+     width: 100%
+    }
+    .one-by-one{
+      background-color: blue;
+      margin-left: -8px;
+      display: block;
+      width: 100%;
+    }
+  
+  
 
 .main-footer {
   background-color: #035b99;
