@@ -1,18 +1,29 @@
-  
 
-    nav {
-      position: fixed;
-      width: 100%;
-      
+    body {
+      background-color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      display: block;
+      box-sizing: border-box;
+      margin: 0;
+      overflow-x: hidden;
+      margin: 2px;
+      /* padding: 70px; */
     }
 
-    ul {
+nav {
+  position: fixed;
+  width: 100%;
+  
+  
+}
+
+ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
       background-color: #ffffff;
-    }
+}
     
     li {
       float: left;
@@ -25,8 +36,8 @@
     }
 
     nav ul li:hover {
-      border-bottom: 2px solid #ffcd03;
-      border-top: 2px solid rgb(255, 205, 3);
+      border-bottom: 1px solid #ffcd03;
+      border-top: 1px solid rgb(255, 205, 3);
       border-bottom-right-radius: 50%;
       border-top-left-radius: 50%;
       background-color: rgb(255, 205, 3);
@@ -50,9 +61,10 @@
 
     .active {
       /* border: 2px solid #ffff00; */
-      border-bottom: 2px solid rgb(255, 205, 3);
+      border-bottom: 1px solid rgb(255, 205, 3);
       border-bottom-right-radius: 50%;
     }
+
     .image-under-nav {
       background-image: url('../assets/gorilla.png');
       height: 100vh;
@@ -60,6 +72,7 @@
       background-size: cover;
       /* background-attachment: fixed; */
     }
+
     .image-under-nav h1 {
       position: absolute;
       color: #ffff00;
@@ -70,108 +83,94 @@
       margin-left: 35%;
       bottom: 0;
     }
-    body {
-      background-color: white;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      display: block;
-      box-sizing: border-box;
-      margin: 0;
-      margin: 0;
-      padding: 70px;
-  }
+.cardheader h1 {
+font-weight: 800;
+color: #ffaa0d ;
+font-size: 17px;
+line-height: 24px
+      }
 
-  .card-section h1 {
-      font-weight: 800;
-  }
+.card-section {
+display: block;
+width: 100%;
+background-color: red;
+}
 
-  .card-section .cards {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 100%;
-  }
+.card-section .cards {
+/* display: inline-block; */
+float: left;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between; 
+width: 33.3%;
+}
 
-  .card-section .cards .aCard {
-      width: 32%;
-      height: auto;
-      margin-bottom: 40px;
-      border-radius: 5px;
-      border: 1px solid rgb(216, 216, 216);
-  }
+.card-section .cards .aCard {
+width: 100;
+height: auto;
+margin-bottom: 40px;
+border-radius: 5px;
+border: 1px solid rgb(216, 216, 216);
+margin-left: -8px;
+}
 
-  .card-section .cards .aCard img {
-      width: 100%;
-      border-radius: 5px 5px 0 0;
-  }
+.card-section .cards .aCard img {
+width: 100%;
+border-radius: 5px 5px 0 0;
+height: 200px;
+}
 
-  .card-section .cards .aCard .card-title {
-      background-color: rgb(222, 222, 222);
-      border: 1px solid rgb(216, 216, 216);
-      margin-top: -5px;
-  }
+.card-section .cards .aCard .card-title {
+background-color: rgb(222, 222, 222);
+border: 1px solid rgb(216, 216, 216);
+margin-top: -5px;
+}
+.card-section .cards .aCard .card-title p {
+text-align: center;
+font-weight: 600;
+}
 
-  .card-section .cards .aCard .card-title p {
-      text-align: center;
-      font-weight: 600;
-  }
+.card-section .cards .aCard .description p{
+padding-left: 15px;
+padding-right: 15px;
+}
 
-  .card-section .cards .aCard .description p{
-      padding-left: 15px;
-      padding-right: 15px;
-  }
+.card-section .cards .aCard .description .button {
+background-color: rgb(63, 178, 249);
+padding: 8px 18px;
+border-radius: 5px;
+text-align: center;
+bottom: 0;
+margin-left: 15px;
+margin-right: 15px;
+background-image: linear-gradient(to bottom,#1fc4f0,#0e7add);
+background-repeat: repeat-x
+}
+.card-section .cards .aCard .description .button a {
+text-decoration: none;
+color: white;
+font-weight: 600;
+}
+.main-footer {
+background-color: #035b99;
+display: inline-block;
+width: 100%;
+padding: 8px;
+}
 
-  .card-section .cards .aCard .description .button {
-      background-color: rgb(63, 178, 249);
-      padding: 8px 18px;
-      border-radius: 5px;
-      text-align: center;
-      bottom: 0;
-      margin-left: 15px;
-      margin-right: 15px;
-  }
+.footer{
+/* color: black; */
+background-color:#035b99;
+margin-left: -8px;
+/* padding: 8px; */
+display: block;
+width: 100%;
+}
 
-  .card-section .cards .aCard .description .button:hover {
-      background-color: rgb(9, 143, 227);
-  }
-
-  .card-section .cards .aCard .description .button a {
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-  }
-
-  .card-section .cards .aCard .description .button a:hover {
-      color: rgb(0, 0, 0);
-  }
-  .cards{
-    display:inline-block
-  }            
-              
-
-    
-    
-
-  .main-footer {
-    background-color: #035b99;
-    display: inline-block;
-    width: 100%;
-    padding: 8px;
-  }
-
-  .footer{
-    /* color: black; */
-    background-color:#035b99;
-    margin-left: -8px;
-    /* padding: 8px; */
-    display: block;
-    width: 100%;
-  }
-
-  .contact-us, .investment, .links, .media {
-    width: 24%;
-    float: left;
-    background-color: #035b99;
-    color: #fff;
-  }
+.contact-us, .investment, .links, .media {
+width: 24%;
+float: left;
+background-color: #035b99;
+color: #fff;
+}
 
