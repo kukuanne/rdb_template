@@ -17,7 +17,7 @@ nav {
   
 }
 
-ul {
+nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -25,7 +25,7 @@ ul {
       background-color: #ffffff;
 }
     
-    li {
+nav ul   li {
       float: left;
     }
     
@@ -50,7 +50,7 @@ ul {
 
 
 
-    li a, .dropbtn {
+nav ul li a, .dropbtn {
       display: inline-block;
       color: #03469e !important;
       text-align: center;
@@ -64,49 +64,88 @@ ul {
       border-bottom: 1px solid rgb(255, 205, 3);
       border-bottom-right-radius: 50%;
     }
+.image-under-nav {
+background-image: url('../assets/gorilla.png');
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-attachment: fixed; */
+}
 
-    .image-under-nav {
-      background-image: url('../assets/gorilla.png');
-      height: 100vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      /* background-attachment: fixed; */
-    }
-
-    .image-under-nav h1 {
-      position: absolute;
-      color: #ffff00;
-      background-color: #cacaca79;
-      padding: 30px;
-      font-size: 30px;
-      text-transform: uppercase;
-      margin-left: 35%;
-      bottom: 0;
-    }
-.cardheader h1 {
+.image-under-nav h1 {
+position: absolute;
+color: #ffff00;
+background-color: #cacaca79;
+padding: 30px;
+font-size: 30px;
+text-transform: uppercase;
+margin-left: 35%;
+bottom: 0;
+}
+.export-header{
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 3px;
 font-weight: 800;
-color: #ffaa0d ;
-font-size: 17px;
-line-height: 24px
-      }
+color: #ffaa0d;
+font-size: 22px;
+line-height: 25px;
+zoom: 1;
+}
+.media-section .media-containers .latest-news image-123{
+background-color: #ffaa0d;
+
+}
+
+.export-image{
+background-image: url(../assets/port.PNG);
+height: 60vh;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-image: linear-gradient(to bottom, #004099, #a6a6a6); */
+}
+.export-image .export-text h1{
+   color:#ffff;
+ 
+}
+
+.cardheader{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  font-weight: 800;
+  color: #ffaa0d;
+  font-size: 22px;
+  /* line-height: 25px; */
+  /* zoom: 1; */
+}
+
+.line {
+height: 5px;
+background-color:#cacaca79;
+
+}
 
 .card-section {
 display: block;
 width: 100%;
 background-color: red;
+margin-top: 5px;
+/* padding: 20px;
+position: relative; */
 }
 
 .card-section .cards {
 /* display: inline-block; */
 float: left;
 flex-direction: row;
-flex-wrap: wrap;
+flex-wrap: wrap; 
 justify-content: space-between; 
 width: 33.3%;
 }
 
 .card-section .cards .aCard {
-width: 100;
+width: 95%;
 height: auto;
 margin-bottom: 40px;
 border-radius: 5px;
@@ -136,41 +175,86 @@ padding-right: 15px;
 }
 
 .card-section .cards .aCard .description .button {
-background-color: rgb(63, 178, 249);
 padding: 8px 18px;
 border-radius: 5px;
 text-align: center;
 bottom: 0;
 margin-left: 15px;
 margin-right: 15px;
+margin-bottom: 10px;
 background-image: linear-gradient(to bottom,#1fc4f0,#0e7add);
-background-repeat: repeat-x
+background-repeat: repeat-x;
 }
 .card-section .cards .aCard .description .button a {
 text-decoration: none;
 color: white;
 font-weight: 600;
 }
-.main-footer {
+
+/* .main-footer {
 background-color: #035b99;
-display: inline-block;
+display: block;
 width: 100%;
 padding: 8px;
 }
-
+  
 .footer{
-/* color: black; */
-background-color:#035b99;
-margin-left: -8px;
-/* padding: 8px; */
-display: block;
+background-color:#1fc4f0;
+margin-left: 8px;
+float: left;
+flex-direction: row;
+flex-wrap: wrap; 
+justify-content: space-between;
 width: 100%;
+}
+.main-footer .footer .footer-title {
+color: #ffea00 ;
+font-family: 'museo-sans-condensed';
+font-size: 20px;
+font-weight: 700;
+} */
+
+/* ul{
+list-style-type:none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+color: white;
+}
+.main-footer .footer .ul a{
+  color: #ffffff;
 }
 
 .contact-us, .investment, .links, .media {
-width: 24%;
-float: left;
-background-color: #035b99;
-color: #fff;
+
+width: 95%
+
+}  */
+
+.main-footer {
+  background-color: #035b99;
+  float: left;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
 }
 
+.main-footer .footer {
+  width: 100%;
+}
+
+.footer .contact-us,
+.footer .Investment, 
+.footer .links, 
+.footer .media {
+  width: 25%;
+  float: left;
+}
+
+.footer-title {
+  color: #ffaa0d;
+}
+
+.contact-us p{
+  color: #c4c4bf;
+}
