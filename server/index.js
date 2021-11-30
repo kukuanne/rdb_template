@@ -1,6 +1,15 @@
-const express = require('express');
+import express from 'express'
 const app = express();
-app.get('/',(req,res) => {
-    res.send(helloooo);
-});
-app.listen(5000, () => console.log('listening on port 5000'));
+
+const PORT = 5000;
+
+app.listen(PORT,() => console.log(`Server running on port : http://localhost${PORT}`));
+
+// app.get('/', function(req, res) {
+//     res.send('hello anne');
+// });
+// app.listen(5000), function() {
+//     console.log('listerning on port 5000....');
+
+// }
+ 
