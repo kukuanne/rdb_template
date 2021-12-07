@@ -161,7 +161,21 @@ app.put('/api/citizens/update/:id',(req, res) =>{
 
 });
 
+app.delete('/api/citizens/delete/:id',(req, res) => {
+  const citizen = citizens.find(c => c.id === parseInt(req.params.id))
+  if(!citizen) res.status(404).json({message:'No citizen with that ID'})
 
+  const index = citizens.indexOf(citizen);
+  citizens.splice(index, 1);
+
+  res.json({message: 'citizen deleted sucessful',citizen});
+
+
+
+
+}
+
+)
 
 
 
